@@ -35,6 +35,17 @@
   		a:link{
   			color: pink;
   		}
+
+  		#contact-form{
+  			text-align: center;
+  			border-width: 10px;
+  			border-style: solid;
+  			border-color: pink;
+  		}
+
+  		.form-control{
+  			margin-bottom: 16px;
+  		}
 	</style>
 </head>
 <body>
@@ -161,6 +172,17 @@
 			<strong class="heading">Reading:</strong>
 			A huge fan of sci-fi and non-fictional books.
 		</p>
+	</div>
+
+	<div id="contact-form">
+		<h3> You can reach out to me for further information</h3>
+		<form name="submitForm">
+			<input type="text" name="firstname" placeholder="Enter your name" class="form-control" minlength="4" required></br>
+			<input type="email" name="youremail" placeholder="Enter your email address" class="form-control" required></br>
+			<input type="text" name="title" placeholder="Title of your message" class="form-control" required></br>
+			<textarea name="message" placeholder="Message" rows="4" class="form-control" minlength="20" required></textarea></br>
+			<input type="submit" name="submit" value="SEND MESSAGE" class="form-control">
+		</form>
 	</div>
 
 </body>
